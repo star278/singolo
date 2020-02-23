@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Lato Bold";
+    src: url(assets/fonts/lato-bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url(assets/fonts/Lato-Black.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(assets/fonts/lato-light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url(assets/fonts/lato-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body{
+    margin-top: 0;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #2d303a;
+    height: 89px;
+    color: white;
+}
+
+header h1, ul {
+    display: inline-block;
+    font-family: "Lato Bold";
+}
+
+header h1{
+    margin: 0;
+    padding-top: 29px;
+}
+
+h1 {
+    padding-left: 40px;
+    font-size: 24px;
+}
+
+header  ul {
+    list-style: list-style-position;
+    text-align: right;
+    font-size: 12px;
+    padding-left: 456px;
+}
+
+header li {
+    display: inline-block;
+    padding-right: 26px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #f06c64;
+}
+
+.star{
+    position: absolute;
+    margin-top: 29px;
+    text-align: left;
+    margin-left: -5px;
+    color: #f06c64;
+    font-size: 21px;
+}
+
+.line-top {
+    width: 100%;
+    height: 6px;
+    background-color: #323746;
+}
+
+.slider{
+    width: 100%;
+    height: 594px;
+    background-color: #f06c64;
+}
+
+.slider-image-arrow1 {
+    position: absolute;
+    padding-top: 282px;
+    padding-left: 42px;
+}
+
+.slider-image-arrow2 {
+    padding-top: 282px;
+    margin-right: 42px;
+    float: right;
+}
+
+.phone-vertical {
+    position: absolute;
+    padding-top: 53px;
+    padding-left: 111px;
+}
+
+.phone-gorisontal {
+    position: absolute;
+    padding-top: 173px;
+    padding-left: 425px;
+}
+
+.line-middle {
+    width: 100%;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.content{
+    width: 100%;
+    height: 494px;
+    background-color: #f2f2f2;
+}
+
+.line-bottom {
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.title {
+    font-family: "Lato Black";
+    color: #666d89;
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    padding-top: 62px;
+    padding-left: 40px;
+}
+
+.description {
+    font-family: "Lato Light";
+    color: #767e9e;
+    font-size: 18px;
+    width: 940px;
+    padding-left: 40px;
+    padding-top: 16px;
+    font-weight: 900;
+    line-height: 163%;
+}
+
+.block-image {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.block-text {
+    width: 220px;
+    display: inline-block;
+    padding-left: 17px;
+}
+
+.block-title {
+    font-family: "Lato Black";
+    color: #666d89;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: -3px;
+    margin-left: -1px;
+}
+
+.block-description {
+    padding-top: 7px;
+    font-family: "Lato Bold";
+    font-size: 12px;
+    line-height: 174%;
+    color: #767e9e;
+}
+
+.flex-container {
+    padding-top: 47px;
+    padding-left: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-element{
+    width: 300px;
+    height: 123px;
+}
+
+.flex-element:nth-child(2){
+    padding-left: 19px;
+}
+
+.flex-element:nth-child(3){
+    padding-left: 21px;
+}
+
+.flex-element:nth-child(5){
+    padding-left: 19px;
+}
+
+.flex-element:nth-child(6){
+    padding-left: 21px;
+}
