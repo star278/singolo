@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Lato Black";
+    src: url(assets/fonts/Lato-Black.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(assets/fonts/lato-light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url(assets/fonts/lato-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body{
+    margin-top: 0;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+
+}
+
+.section-header {
+    height: 864px;
+    background-color: #2d303a;
+    padding-left: 39px;
+}
+
+.line-top {
+    height: 6px;
+    background-color: #323746;
+}
+
+.menu{
+    height: 185px;
+}
+
+h1 {
+    color: #666d89;
+    padding-top: 62px;
+    font-size: 31px;
+    margin: 0;
+    font-family: "Lato Black";
+}
+
+.menu p {
+    color: #666d89;
+    font-family: "Lato Light";
+    font-weight: 900;
+    font-size: 17.5px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+button {
+    background-color: #2d303a;
+    color: #666d89;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+button:nth-child(1){
+    width: 29px;
+    margin-left: 1px;
+    padding: 3px 0px;
+}
+
+button:nth-child(2){
+    margin-left: 6px;
+    padding: 3px 6px;
+}
+
+button:nth-child(3){
+    margin-left: 6px;
+    padding: 3px 5.5px;
+}
+
+button:nth-child(4){
+    margin-left: 6px;
+    padding: 3px 5.5px;
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.section-header .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 11px;
+}
+
+.section-header .flex-element {
+    padding-left: 20px;
+}
+
+.section-header .flex-element:nth-child(4n+1){
+    padding-left: 1px;
+}
+
+.section-header .flex-element:nth-child(1n+5){
+    padding-top: 15px;
+}
+
+.portfolio-about {
+    height: 666px;
+    padding-left: 40px;
+    padding-top: 62px;
+    padding-right: 40px;
+    background-color: #f2f2f2;
+}
+
+.portfolio-about .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 29px;
+}
+
+.portfolio-about .flex-element {
+    width: 300px;
+}
+
+.portfolio-about .flex-element:nth-child(2) {
+    padding-left: 19px;
+}
+
+.portfolio-about .flex-element:nth-child(3) {
+    padding-left: 20px;
+}
+
+.portfolio-about-title {
+    font-family: "Lato Black";
+    font-size: 30px;
+}
+
+.portfolio-about p {
+    font-family: "Lato Light";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    margin-top: 17px;
+}
+
+.portfolio-about img {
+    padding-bottom: 12px;
+}
+
+.title {
+    font-family: "Lato Black";
+    font-size: 18px;
+}
+
+.portfolio-about .flex-element p{
+    font-family: "Lato Regular";
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.social {
+    padding-top: 13px;
+}
+
+.social-img:nth-child(2) {
+    padding-left: 4px;
+}
+
+.social-img:nth-child(3) {
+    padding-left: 5px;
+}
+
+.social-img:nth-child(4) {
+    padding-left: 3px;
+}
+
+.line-bottom {
+    width: 6px;
+    background-color: #ffffff;
+}
