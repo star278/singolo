@@ -60,6 +60,10 @@ header a {
     text-decoration: none;
 }
 
+.activeLink {
+    color: #F0544A;
+}
+
 header a:hover {
     color: #f06c64;
 }
@@ -89,12 +93,31 @@ header a:hover {
     position: absolute;
     padding-top: 282px;
     padding-left: 42px;
+    position: absolute;
+    z-index: 2;
+}
+
+.slider1 {
+    position: absolute;
+    z-index: 1;
+    transition: all ease 1s;
+    opacity: 1;
+    display: block;
+}
+
+.slider2 {
+    position: absolute;
+    transition: all ease 1s;
+    opacity: 0;
 }
 
 .slider-image-arrow2 {
     padding-top: 282px;
     margin-right: 42px;
     float: right;
+    position: relative;
+    z-index: 2;
+    transition: all ease 1s;
 }
 
 .phone-vertical {
@@ -103,10 +126,46 @@ header a:hover {
     padding-left: 111px;
 }
 
-.phone-gorisontal {
+#phone-vertical {
+    z-index: 1;
+    position: absolute;
+}
+
+.phone-horizontal {
     position: absolute;
     padding-top: 173px;
     padding-left: 425px;
+}
+
+.display-horizontal {
+    height: 188px;
+    width: 333px;
+    background-color: black;
+    margin-left: 485px;
+    margin-top: 187px;
+    float: right;
+    position: absolute;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.display-vertical {
+    height: 333px;
+    width: 188px;
+    background-color: black;
+    margin-left: 125px;
+    margin-top: 118px;
+    float: right;
+    position: absolute;
+    opacity: 0;
+    transition: all ease 1s;
+    z-index: 1;
+}
+
+.active-image {
+    border: solid 5px #F06C64;
+    width: 210px;
+    height: 177px;
 }
 
 .line-middle {

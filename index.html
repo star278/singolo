@@ -9,26 +9,33 @@
 <header>
     <h1>SINGOLO</h1>
     <span class="star">*</span>
-    <ul class="menu">
+    <ul class="menu" id="header-menu">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#service">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
 
 </header>
 <div class="line-top"></div>
 <main>
     <div class="slider">
+        <div class="slider1">
+            <div class="phone-vertical"><img src="assets/image/phone-vertical.png" id="phone-vertical" alt="phone"></div>
+            <div class="phone-horizontal"><img src="assets/image/phone-gorisontal.png" id="phone-horizontal" alt="phone"></div>
+            <div class="display-horizontal"></div>
+            <div class="display-vertical"></div>
+        </div>
+        <div class="slider2">
+            <img src="assets/image/slier2.png" alt="slider2">
+        </div>
         <div class="slider-image-arrow1"><a href="#"><img src="assets/image/chev-1.png" alt="arrow"></a></div>
-        <div class="phone-vertical"><img src="assets/image/phone-vertical.png" alt="phone"></div>
-        <div class="phone-gorisontal"><img src="assets/image/phone-gorisontal.png" alt="phone"></div>
         <div class="slider-image-arrow2"><a href="#"><img src="assets/image/chev-2.png" alt="arrow"></a></div>
     </div>
     <div class="line-middle"></div>
     <div class="content">
-        <div class="title">Our Services</div>
+        <div class="title" id="service">Our Services</div>
         <div class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
         <div class="flex-container">
             <div class="flex-element">
@@ -75,7 +82,7 @@
             </div>
         </div>
     </div>
-    <div class="section-header">
+    <div class="section-header" id="portfolio">
         <div class="menu">
             <h1>Portfolio</h1>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -86,7 +93,7 @@
                 <button>Artwork</button>
             </div>
         </div>
-        <div class="flex-container">
+        <div class="flex-container portfolio-container">
             <div class="flex-element"><img src="assets/image/portfolio1.png" alt="" class="portfolio-image"></div>
             <div class="flex-element"><img src="assets/image/portfolio2.png" alt="" class="portfolio-image"></div>
             <div class="flex-element"><img src="assets/image/portfolio3.png" alt="" class="portfolio-image"></div>
@@ -102,7 +109,7 @@
         </div>
     </div>
     <div class="line-top"></div>
-    <div class="portfolio-about">
+    <div class="portfolio-about" id="about">
         <span class="portfolio-about-title">About Us</span>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
             nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -143,7 +150,7 @@
             </div>
         </div>
     </div>
-    <div class="line-bottom"></div>
+    <div class="line-bottom" id="contact"></div>
     <div class="singolo">
     <section class="header">
         <h1>Get a Quote</h1>
@@ -153,11 +160,11 @@
         <form action="index.php">
             <div class="form-input">
                 <div class="flex-container">
-                    <div class="flex-element"><input type="text" placeholder="Name (Required)" required></div>
-                    <div class="flex-element"><input type="email" placeholder="Email (Required)" required></div>
-                    <div class="flex-element"><input type="text" placeholder="Subject"></div>
-                    <div class="flex-element"><textarea placeholder="Describe your project in detail..."></textarea></div>
-                    <button>Submit</button>
+                    <div class="flex-element"><input type="text" id="name" placeholder="Name (Required)" required></div>
+                    <div class="flex-element"><input type="email" id="email" placeholder="Email (Required)" required></div>
+                    <div class="flex-element"><input type="text" id="subject" placeholder="Subject"></div>
+                    <div class="flex-element"><textarea id="describe" placeholder="Describe your project in detail..."></textarea></div>
+                    <button id="submit-form">Submit</button>
                 </div>
             </div>
             <div class="form-info">
@@ -184,4 +191,5 @@
     </div>
 </section>
 </body>
+<script src="./js/script.js"></script>
 </html>
