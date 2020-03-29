@@ -18,13 +18,6 @@
     src: url(assets/fonts/lato-regular.ttf); /* Путь к файлу со шрифтом */
 }
 
-body{
-    margin-top: 0;
-    width: 1020px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 header {
     background-color: #2d303a;
     height: 89px;
@@ -36,14 +29,14 @@ header h1, ul {
     font-family: "Lato Bold";
 }
 
-header h1{
+header h1 {
     margin: 0;
     padding-top: 29px;
     padding-left: 40px;
     font-size: 24px;
 }
 
-header  ul {
+header ul {
     list-style: list-style-position;
     text-align: right;
     font-size: 12px;
@@ -68,7 +61,40 @@ header a:hover {
     color: #f06c64;
 }
 
-.star{
+.burger {
+    position: absolute;
+    display: none;
+    width: 25px;
+    height: 20px;
+    z-index: 6;
+}
+
+.screen-lock {
+    display: none;
+    background: rgb(45, 48, 58);
+    opacity: 0.6;
+    width: 375px;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backdrop {
+    display: none;
+    position: absolute;
+    width: 278px;
+    height: 812px;
+    top: 0px;
+    margin-left: 0px;
+    z-index: 4;
+    background: #2D303A;
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+}
+
+.star {
     position: absolute;
     margin-top: 29px;
     text-align: left;
@@ -83,7 +109,7 @@ header a:hover {
     background-color: #323746;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: 594px;
     background-color: #f06c64;
@@ -174,7 +200,7 @@ header a:hover {
     background-color: #ea676b;
 }
 
-.content{
+.content {
     width: 100%;
     height: 494px;
     background-color: #f2f2f2;
@@ -244,37 +270,26 @@ header a:hover {
     flex-wrap: wrap;
 }
 
-.content .flex-container .flex-element{
+.content .flex-container .flex-element {
     width: 300px;
     height: 123px;
 }
 
-.content .flex-container .flex-element:nth-child(2){
+.content .flex-container .flex-element:nth-child(2) {
     padding-left: 19px;
 }
 
-.content .flex-container .flex-element:nth-child(3){
+.content .flex-container .flex-element:nth-child(3) {
     padding-left: 21px;
 }
 
-.content .flex-container .flex-element:nth-child(5){
+.content .flex-container .flex-element:nth-child(5) {
     padding-left: 19px;
 }
 
-.content .flex-container .flex-element:nth-child(6){
+.content .flex-container .flex-element:nth-child(6) {
     padding-left: 21px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .section-header {
     height: 864px;
@@ -287,7 +302,7 @@ header a:hover {
     background-color: #323746;
 }
 
-.menu{
+.menu {
     height: 185px;
 }
 
@@ -319,23 +334,23 @@ header a:hover {
     margin-top: -2px;
 }
 
-.section-header button:nth-child(1){
+.section-header button:nth-child(1) {
     width: 29px;
     margin-left: 1px;
     padding: 3px 0px;
 }
 
-.section-header button:nth-child(2){
+.section-header button:nth-child(2) {
     margin-left: 6px;
     padding: 3px 6px;
 }
 
-.section-header button:nth-child(3){
+.section-header button:nth-child(3) {
     margin-left: 6px;
     padding: 3px 5.5px;
 }
 
-.section-header button:nth-child(4){
+.section-header button:nth-child(4) {
     margin-left: 6px;
     padding: 3px 5.5px;
 }
@@ -355,11 +370,11 @@ header a:hover {
     padding-left: 20px;
 }
 
-.section-header .flex-element:nth-child(4n+1){
+.section-header .flex-element:nth-child(4n+1) {
     padding-left: 1px;
 }
 
-.section-header .flex-element:nth-child(1n+5){
+.section-header .flex-element:nth-child(1n+5) {
     padding-top: 15px;
 }
 
@@ -415,7 +430,7 @@ header a:hover {
     font-size: 18px;
 }
 
-.portfolio-about .flex-element p{
+.portfolio-about .flex-element p {
     font-family: "Lato Regular";
     font-size: 12px;
     margin-top: 8px;
@@ -442,18 +457,6 @@ header a:hover {
     width: 6px;
     background-color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .singolo {
     height: 648px;
@@ -538,7 +541,7 @@ header a:hover {
     padding-top: 26px;
 }
 
-.singolo .info p img{
+.singolo .info p img {
     padding-right: 10px;
 }
 
@@ -620,6 +623,575 @@ header a:hover {
     color: #f0d8d9;
 }
 
+    body {
+        margin-top: 0;
+        width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        width: 768px;
+    }
 
+    .star {
+        margin-left: 0px;
+    }
+
+    header ul {
+        position: absolute;
+        width: 438px;
+        height: 14px;
+        left: 290px;
+        top: 39px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        letter-spacing: -0.035em;
+        margin-top: 0px;
+        padding-left: 26px;
+    }
+
+    header li {
+        display: inline-block;
+    }
+
+    .phone-vertical {
+        padding-top: 41.04px;
+        padding-left: 84.19px;
+    }
+
+    .phone-vertical img {
+        width: 180.71px;
+        height: 363.67px;
+    }
+
+    .display-vertical {
+        margin-left: 95.4px;
+        margin-top: 90.4px;
+        width: 141.55px;
+        height: 250.73px;
+    }
+
+    .phone-horizontal img {
+        height: 180.71px;
+        width: 363.67px;
+    }
+
+    .phone-horizontal {
+        position: absolute;
+        padding-top: 133.05px;
+        padding-left: 319.45px;
+    }
+
+    .display-horizontal {
+        height: 143px;
+        width: 250.73px;
+        margin-left: 364px;
+        margin-top: 143px;
+    }
+
+    .slider-image-arrow2 {
+        padding-top: 211.88px;
+    }
+
+    .slider-image-arrow1 {
+        padding-top: 211.88px;
+    }
+
+    .slider {
+        height: 447.25px;
+    }
+
+    .slider2 img {
+        width: 768px;
+    }
+
+    .content {
+        height: 618px;
+    }
+
+    .content .title {
+        padding-top: 40px;
+        padding-left: 41px;
+    }
+
+    .description {
+        width: 687px;
+        height: 99px;
+        left: 41px;
+        top: 640px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 41px;
+        padding-top: 18px;
+    }
+
+    .content .flex-container .flex-element:nth-child(2n+2) {
+        padding-left: 53px;
+    }
+
+    .content .flex-container .flex-element:nth-child(3) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container .flex-element:nth-child(5) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container {
+        padding-top: 28px;
+    }
+
+    .section-header .menu h1 {
+        padding-top: 59px;
+    }
+
+    .section-header {
+        padding-left: 41px;
+    }
+
+    .section-header .menu h1 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .menu p {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: 14px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 30px;
+        width: 660px;
+        height: 60px;
+    }
+
+    .section-header {
+        height: 1100px;
+    }
+
+    .section-header .flex-container {
+        padding-top: 45px;
+    }
+
+    .section-header .flex-element img {
+        width: 216.19px;
+        height: 183.76px;
+    }
+
+    .active-image {
+        width: 206px !important;
+        height: 174px !important;
+    }
+
+    .section-header .flex-element:nth-child(4n+1) {
+        padding-left: 0px;
+    }
+
+    .section-header .flex-element:nth-child(1n+5) {
+        padding-top: 0px;
+    }
+
+    .section-header .flex-element {
+        padding-left: 0px;
+    }
+
+    .section-header .flex-element:nth-child(1n+2) {
+        padding-left: 19.65px;
+    }
+
+    .section-header .flex-element:nth-child(3n+1) {
+        padding-left: 0px;
+    }
+
+    .section-header .flex-element:nth-child(1n+4) {
+        padding-top: 18.65px;
+    }
+
+    .portfolio-about {
+        padding-top: 52px;
+        height: 610px;
+    }
+
+    .portfolio-about p {
+        margin-top: 12px;
+    }
+
+    .portfolio-about .flex-element img {
+        width: 218.94px;
+        height: 218.94px;
+    }
+
+    .portfolio-about .flex-element .social-bottom img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .portfolio-about .flex-element {
+        width: 218.94px;
+    }
+
+    .portfolio-about .flex-element:nth-child(2) {
+        padding-left: 14.6px;
+    }
+
+    .portfolio-about .flex-element:nth-child(3) {
+        padding-left: 14.6px;
+    }
+
+    .flex-element .social-bottom {
+        padding-top: 0px;
+    }
+
+    .singolo h1 {
+        padding-left: 42px;
+        padding-top: 53px;
+
+    }
+
+    .singolo .header p {
+        margin-top: 14px;
+        padding-left: 42px;
+        padding-right: 37px;
+    }
+
+    .form-input {
+        padding-top: 0px;
+        width: 418px;
+        padding-left: 39px;
+        padding-right: 46px;
+    }
+
+    .singolo textarea {
+        width: 416px;
+    }
+
+    .form-info {
+        width: 221px;
+        padding-right: 37px;
+    }
+
+    .singolo h3 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .singolo .form-info p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .singolo .info {
+        padding-top: 10px;
+    }
+
+    .footer-singolo span {
+        font-size: 13px;
+        padding-left: 39px;
+    }
+
+    .social {
+        padding-right: 42px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    body {
+        width: 375px;
+    }
+
+    #header-menu {
+        display: none;
+    }
+
+    header h1 {
+        padding-top: 24px;
+        padding-left: 148px;
+        font-size: 19.68px;
+    }
+
+    .star {
+        margin-top: 23px;
+        margin-left: 0px;
+        font-size: 19.68px;;
+    }
+
+    header {
+        height: 71px;
+    }
+
+    .burger {
+        display: block;
+        padding-top: 26px;
+        padding-left: 20px;
+    }
+
+    .active-title {
+        position: absolute;
+        z-index: 5;
+        padding-left: 71px;
+    }
+
+    .active-star {
+        position: absolute;
+        z-index: 5;
+        padding-left: 159px;
+    }
+
+    .active-menu {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        margin-top: 0px;
+        padding-top: 232px;
+        padding-left: 71px;
+    }
+
+    header li {
+        display: block;
+        padding-right: 26px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.035em;
+        text-align: initial;
+        padding-top: 27px;
+    }
+
+    .slider {
+        height: 218px;
+    }
+
+    .phone-vertical img{
+        width: 88px;
+        height: 177px;
+    }
+
+    .phone-vertical {
+        padding-top: 20px;
+        padding-left: 41px;
+    }
+
+    .display-vertical {
+        width: 69px;
+        height: 122px;
+        margin-left: 46px;
+        margin-top: 44px;
+    }
+
+    .phone-horizontal img{
+        height: 88px;
+        width: 177px;
+    }
+
+    .phone-horizontal {
+        padding-top: 65px;
+        padding-left: 156px;
+    }
+
+    .slider-image-arrow1 {
+        padding-top: 98px;
+        padding-left: 10px;
+    }
+
+    .slider-image-arrow2 {
+        padding-top: 98px;
+        margin-right: 10px;
+    }
+
+    .display-horizontal {
+        height: 69px;
+        width: 122px;
+        margin-left: 178px;
+        margin-top: 70px;
+    }
+
+    .slider2 img {
+        height: 221px;
+    }
+
+    .content .title {
+        padding-top: 25px;
+        padding-left: 32px;
+    }
+
+    .description {
+        width: 314px;
+        padding-left: 32px;
+        padding-top: 18px;
+    }
+
+    .content {
+        height: 1032px;
+    }
+
+    .content .flex-container {
+        padding-top: 25px;
+        padding-left: 32px;
+    }
+
+    .content .flex-container .flex-element:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container .flex-element:nth-child(3) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container .flex-element:nth-child(5) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container .flex-element:nth-child(6) {
+        padding-left: 0px;
+    }
+
+    .content .flex-container .flex-element {
+        height: 120px;
+    }
+
+    .section-header {
+        height: 844px;
+        padding-left: 30px;
+    }
+
+    .section-header .menu h1 {
+        padding-top: 42px;
+        font-size: 30px;
+    }
+
+    .menu p {
+        width: 315px;
+        height: 96px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .section-header .flex-container {
+        padding-top: 65px;
+    }
+
+    .section-header .flex-element img {
+        width: 151px;
+        height: 128px;
+    }
+
+    .active-image {
+        width: 151px !important;
+        height: 128px !important;
+    }
+
+    .section-header .flex-element:nth-child(4n+1) {
+        padding-left: 0px;
+    }
+
+    .section-header .flex-element:nth-child(1n+5) {
+        padding-top: 0px;
+    }
+
+    .section-header .flex-element {
+        padding-left: 0px;
+    }
+
+    .section-header .flex-element:nth-child(1n+3) {
+        padding-top: 14px;
+    }
+
+    .section-header .flex-element:nth-child(2n+2) {
+        padding-left: 13px;
+    }
+
+    .section-header .flex-element:nth-child(1n+9) {
+        display: none;
+    }
+
+    .portfolio-about {
+        padding-left: 30px;
+        padding-top: 33px;
+    }
+
+    .portfolio-about {
+        height: 1676px;
+    }
+
+    .portfolio-about .flex-element:nth-child(2) {
+        padding-left: 0px;
+        padding-top: 22px;
+    }
+
+    .portfolio-about .flex-element:nth-child(3) {
+        padding-left: 0px;
+        padding-top: 22px;
+    }
+
+    .flex-element .social-bottom {
+        padding-top: 0px;
+    }
+
+    .singolo {
+        height: 969px;
+    }
+
+    .singolo h1 {
+        padding-left: 30px;
+        padding-top: 44px;
+        font-size: 30px;
+    }
+
+    .singolo .header p {
+        padding-left: 30px;
+        padding-right: 31px;
+        margin-top: 14px;
+        margin-bottom: 19px;
+    }
+
+    .form-input {
+        padding-top: 0px;
+        padding-left: 30px;
+    }
+
+    .form-input {
+        width: 303px;
+    }
+
+    .singolo textarea {
+        width: 301px;
+        height: 159px;
+    }
+
+    .singolo button {
+        width: 317px;
+    }
+
+    .singolo h3 {
+        padding-top: 16px;
+    }
+
+    .form-info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer-singolo span {
+        display: none;
+    }
+
+    .social {
+        padding-right: 111px;
+    }
+}

@@ -131,3 +131,36 @@ function validateEmail(email)
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
+
+document.querySelector('.burger').addEventListener('mouseenter', showMenu);
+document.querySelector('.burger').addEventListener('mouseleave', hideMenu);
+
+
+function showMenu(e) {
+    var image = document.querySelector('.burger').children[0],
+        screenLock = document.querySelector('.screen-lock'),
+        backdrop = document.querySelector('.backdrop'),
+        title = document.querySelector('header').children[1],
+        star = document.querySelector('.star'),
+        headerMenu = document.querySelector('#header-menu');
+
+    image.style.transform = 'rotate(90deg)';
+    screenLock.style.display = 'block';
+    backdrop.style.display = 'block';
+    title.classList.add('active-title');
+    star.classList.add('active-star');
+    headerMenu.style.display = 'block';
+    headerMenu.classList.add('active-menu');
+
+}
+
+function hideMenu(e) {
+        var image = document.querySelector('.burger').children[0];
+        image.style.transform = 'rotate(0deg)';
+        document.querySelector('.screen-lock').style.display = 'none';
+        document.querySelector('.backdrop').style.display = 'none';
+        document.querySelector('header').children[1].classList.remove('active-title');
+        document.querySelector('.star').classList.remove('active-star');
+        document.querySelector('#header-menu').classList.remove('active-menu');
+        document.querySelector('#header-menu').style.display = 'none';
+}
